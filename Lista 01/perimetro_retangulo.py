@@ -1,0 +1,5 @@
+L1, L2 = input().split()
+L1 = int (L1)
+L2 = int (L2)
+perimetro = (2* (L1 + L2))
+print(perimetro)

@@ -1,0 +1,5 @@
+Hot_dog, People = input().split()
+H = int(Hot_dog)
+P = int(People)
+media = (H / P)
+print(f'{media:.2f}')
