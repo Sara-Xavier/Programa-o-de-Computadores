@@ -1,7 +1,6 @@
+a, b , c = map(int, input().split())
 
-calculo = [int(x) for x in input().split(' ')]
-
-if ((calculo[0] + calculo[1] < calculo[2]) | (calculo[0] + calculo[2] < calculo[1]) | (calculo[1] + calculo[2] < calculo[0])):
-  print("N")
+if a + b + c > 0 and abs(a) + abs(b) + abs(c) >= max(abs(a), abs(b), abs(c)):
+    print("S")  
 else:
-  print("S")
+    print("N")
