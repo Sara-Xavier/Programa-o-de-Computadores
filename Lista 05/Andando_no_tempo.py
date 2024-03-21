@@ -1,6 +1,7 @@
-a, b , c = map(int, input().split())
+creditos = list(map(int, input().split()))
+#condições para viajar para o presente:
+if (creditos[0] + creditos[2] == creditos[1])  or (creditos[1] + creditos[2] == creditos[0]) or (creditos[0] + creditos[1] == creditos[2]) or (creditos[0] - creditos[2] == 0) or (creditos[0] - creditos[1] == 0) or (creditos[1] - creditos[2] == 0):
+    print('S')
 
-if a + b + c > 0 and abs(a) + abs(b) + abs(c) >= max(abs(a), abs(b), abs(c)):
-    print("S")  
-else:
+elif (creditos[0] > creditos[1] + creditos[2]) or (creditos[1] > creditos[0] + creditos[2]) or (creditos[2] > creditos[1] + creditos[0]):
     print("N")
