@@ -1,8 +1,22 @@
-creditos = list(map(int, input().split()))
-
+a, b, c = map(int, input().split())
+# 0 1 2
 #condições para viajar para o presente:
-if (creditos[0] + creditos[2] == creditos[1])  or (creditos[1] + creditos[2] == creditos[0]) or (creditos[0] + creditos[1] == creditos[2]) or (creditos[0] - creditos[2] == 0) or (creditos[0] - creditos[1] == 0) or (creditos[1] - creditos[2] == 0):
+if (a + c == b) or \
+   (b + c == a) or \
+   (a + b == c) or \
+   (a - c == 0) or \
+   (a - b == 0) or \
+   (b - c == 0):
     print('S')
 
-elif (creditos[0] > creditos[1] + creditos[2]) or (creditos[1] > creditos[0] + creditos[2]) or (creditos[2] > creditos[1] + creditos[0]):
-    print("N")
+elif (a > b + c) or \
+     (b > a + c) or \
+     (c > b + a) or \
+     (c > a + b) or \
+     (a + b + c == 0):
+      print("N")
+      
+elif (a == 0 and b == 0) or \
+     (a == 0 and c == 0) or \
+     (b == 0 and c == 0):
+        print('N')
