@@ -1,3 +1,6 @@
+# 2. Escreva uma função recursiva que receba um número inteiro, não negativo, e retorne se ele é primo.
+# Assinatura da função: def primo(n)
+
 def primo(n):
     if n <= 1:
         return False
